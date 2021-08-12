@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-dots {
+  bottom: -35px !important;
+}
+.slick-dots li button::before {
+  border: 1px solid #e3000f;
+  opacity: 1 !important;
+  color: transparent !important;
+}
+.slick-dots li.slick-active button::before {
+  background-color: #e3000f;
+}
+/* .slick-next::before,
+.slick-prev::before {
+  font-family: unset !important;
+  opacity: 1 !important;
+  border: 1px solid #e3000f;
+  color: #e3000f !important;
+}
+.slick-next::before {
+  content: "→";
+}
+.slick-prev::before {
+  content: "←";
+}
+.slick-arrow:hover {
+  background-color: #e3000f !important;
+  border: none !important;
+} */
+
+.arrow {
+  position: absolute;
+  color: #e3000f;
+  border: 1px solid #e3000f;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background-color: #e3000f;
+}
+.arrow:hover {
+  color: #1e2a4f;
+}
+
+.nextArrow {
+  top: 50%;
+  right: -35px;
+}
+
+.prevArrow {
+  top: 50%;
+  left: -35px;
+}
+
+.arrowPath {
+  fill: #e3000f;
+}
+
+.arrow:hover .arrowPath {
+  fill: #1e2a4f;
+}

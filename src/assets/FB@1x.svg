@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>FB@1x</title>
+    <g id="1.-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HP2" transform="translate(-1504.000000, -36.000000)">
+            <g id="HEADER" transform="translate(0.000000, -36.000000)">
+                <g id="FB" transform="translate(1504.000000, 72.000000)">
+                    <rect id="Rectangle" stroke="#E3000F" stroke-width="2" x="1" y="1" width="30" height="30"></rect>
+                    <g id="Group" transform="translate(11.999500, 8.000000)" fill="#E3000F" fill-rule="nonzero">
+                        <g id="facebook-f">
+                            <path d="M6.54,2.65666667 L8.00066667,2.65666667 L8.00066667,0.112666667 C7.74866667,0.078 6.882,0 5.87266667,0 C3.76666667,0 2.324,1.32466667 2.324,3.75933333 L2.324,6 L0,6 L0,8.844 L2.324,8.844 L2.324,16 L5.17333333,16 L5.17333333,8.84466667 L7.40333333,8.84466667 L7.75733333,6.00066667 L5.17266667,6.00066667 L5.17266667,4.04133333 C5.17333333,3.21933333 5.39466667,2.65666667 6.54,2.65666667 L6.54,2.65666667 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
