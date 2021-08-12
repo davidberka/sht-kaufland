@@ -1,7 +1,13 @@
 import logo from "../assets/logo_dhsk.png";
 import bgLogo from "../assets/KL_Logo_SHT_Final@1x.svg";
+import { useState } from "react";
 
 const Header = () => {
+  const [menu, setMenu] = useState(false);
+
+  const menuHandler = () => {
+    setMenu(!menu);
+  };
   return (
     <header className="bg-white h-20 w-full px-3 flex items-center justify-between border-b-2 border-blue-main">
       <div className="relative h-full w-32 flex items-center justify-center">
@@ -13,7 +19,7 @@ const Header = () => {
         />
         <img className="h-2/3" src={logo} alt="logo" loading="lazy" />
       </div>
-      <div className="hidden">
+      <div className={menu ? "flex" : "hidden"}>
         <nav>
           <ul>
             <li>O ŠKOLE</li>
@@ -29,7 +35,7 @@ const Header = () => {
           <span>tt</span>
         </div>
       </div>
-      <div className="p-3 cursor-pointer">
+      <div className="p-3 cursor-pointer" onClick={menuHandler}>
         <div className="w-8 h-1 bg-blue-main rounded"></div>
         <div className="w-8 h-1 bg-blue-main my-2 rounded"></div>
         <div className="w-8 h-1 bg-blue-main rounded"></div>
