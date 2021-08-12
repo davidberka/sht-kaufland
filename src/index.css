@@ -48,10 +48,27 @@ html {
   left: -35px;
 }
 
+@media only screen and (min-width: 768px) {
+  .prevArrow {
+    left: -50px;
+  }
+
+  .nextArrow {
+    right: -50px;
+  }
+}
+
 .arrowPath {
   fill: #e3000f;
 }
 
 .arrow:hover .arrowPath {
   fill: #1e2a4f;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-slide > div {
+  padding: 0 10px;
 }

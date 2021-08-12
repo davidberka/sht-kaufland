@@ -11,8 +11,8 @@ function App() {
       <Header />
 
       {/* FIRST SECTION */}
-      <div className="bg-redBg h-88 w-full">
-        <div className="h-full px-3">
+      <div className="bg-redBg h-88 md:h-96 w-full">
+        <div className="h-full md:w-5/6 md:mx-auto px-3">
           {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
           <iframe
             width="100%"
@@ -25,8 +25,11 @@ function App() {
       </div>
 
       {/* SECOND SECTION */}
-      <div id="about" className="px-3 py-10 w-full flex flex-col items-center">
-        <div className="relative mb-8">
+      <div
+        id="about"
+        className="px-3 md:w-5/6 md:mx-auto py-10 w-full flex flex-col items-center"
+      >
+        <div className="relative mb-8 w-72">
           <img className="mt-5" src={mainImg} alt="" loading="lazy" />
         </div>
         <div>
@@ -59,53 +62,54 @@ function App() {
       </div>
 
       {/* THIRD SECTION */}
-      <div
-        id="content"
-        className="w-full px-3 py-10 bg-gray-100 flex flex-col space-y-5"
-      >
-        <div className="bg-white shadow">
-          <div>
-            <img src={activityImage} alt="" />
-            <h3 className="text-3xl text-blue-main font-bold w-max py-2 px-4">
-              HOKEJ0VÉ DOVEDNOSTI
-            </h3>
+      <div id="content" className="w-full px-3 py-10 bg-gray-100">
+        <div className=" flex flex-col space-y-5 w-full md:w-5/6 md:mx-auto">
+          <div className="bg-white shadow md:w-3/4">
+            <div>
+              <img src={activityImage} alt="" />
+              <h3 className="text-3xl text-blue-main bg-white md:relative md:-mt-20 md:w-1/2 md:ml-5 font-bold w-max py-2 px-4">
+                HOKEJ0VÉ DOVEDNOSTI
+              </h3>
+            </div>
+            <div className="p-4 pt-2 md:px-10 md:py-6">
+              <div className="border-b flex pb-1">
+                <h6 className="mr-4 font-bold text-base">BRUSLENÍ</h6>
+                <p>agility, rychlost, techinka bruslení</p>
+              </div>
+              <div className="py-2 border-b flex">
+                <h6 className="font-bold text-base mr-4">TECHNIKA</h6>
+                <p>dovednosti v herních situacích, zakončení</p>
+              </div>
+              <div className="pt-2">
+                <h6 className="font-bold text-base">HOKEJOVÉ MYŠLENÍ</h6>
+              </div>
+            </div>
           </div>
-          <div className="p-4 pt-2">
-            <div className="border-b flex pb-1">
-              <h6 className="mr-4 font-bold text-base">BRUSLENÍ</h6>
-              <p>agility, rychlost, techinka bruslení</p>
+          <div className="bg-white shadow md:w-3/4">
+            <div>
+              <img src={activityImage} alt="" />
+              <h3 className="text-3xl text-blue-main bg-white md:relative md:-mt-20 md:w-1/2 md:ml-5 font-bold w-max py-2 px-4">
+                ROZVOJ OSOBNOSTI
+              </h3>
             </div>
-            <div className="py-2 border-b flex">
-              <h6 className="font-bold text-base mr-4">TECHNIKA</h6>
-              <p>dovednosti v herních situacích, zakončení</p>
-            </div>
-            <div className="pt-2">
-              <h6 className="font-bold text-base">HOKEJOVÉ MYŠLENÍ</h6>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white shadow">
-          <div>
-            <img src={activityImage} alt="" />
-            <h3 className="text-3xl text-blue-main font-bold w-max py-2 px-4">
-              ROZVOJ OSOBNOSTI
-            </h3>
-          </div>
-          <div className="p-4 pt-2">
-            <div className="border-b flex pb-1">
-              <h6 className="font-bold text-base mr-4">PSYCHOHYGIENA</h6>
-              <h6 className="font-bold text-base ">
-                PREVENCE ÚZKOSTI A DEPRESE
-              </h6>
-            </div>
-            <div className="py-2 border-b flex">
-              <h6 className="font-bold text-base mr-4">COACHING A MENTORING</h6>
-              <h6 className="font-bold text-base mr-4">NUTRICE</h6>
-              <h6 className="font-bold text-base">FYZIO</h6>
-            </div>
-            <div className="pt-2 flex">
-              <h6 className="font-bold text-base mr-4">PRÁCE S CHYBOU</h6>
-              <h6 className="font-bold text-base">LEADERSHIP</h6>
+            <div className="p-4 pt-2 md:px-10 md:py-6">
+              <div className="border-b flex pb-1">
+                <h6 className="font-bold text-base mr-4">PSYCHOHYGIENA</h6>
+                <h6 className="font-bold text-base ">
+                  PREVENCE ÚZKOSTI A DEPRESE
+                </h6>
+              </div>
+              <div className="py-2 border-b flex">
+                <h6 className="font-bold text-base mr-4">
+                  COACHING A MENTORING
+                </h6>
+                <h6 className="font-bold text-base mr-4">NUTRICE</h6>
+                <h6 className="font-bold text-base">FYZIO</h6>
+              </div>
+              <div className="pt-2 flex">
+                <h6 className="font-bold text-base mr-4">PRÁCE S CHYBOU</h6>
+                <h6 className="font-bold text-base">LEADERSHIP</h6>
+              </div>
             </div>
           </div>
         </div>
@@ -115,26 +119,28 @@ function App() {
       <SliderSection />
 
       {/* FIFTH SECTION */}
-      <div id="sponsor" className="px-3 py-10 bg-red-main">
-        <div className="w-full flex items-center justify-center mb-8">
-          <img className="w-2/3" src={logoKauf} alt="" />
-        </div>
-        <div>
-          <h3 className="text-white text-3xl font-bold mb-2">
-            GENERÁLNÍ PARTNEŘI
-          </h3>
-          <p className="text-white font-base">
-            Generálním partnerem projektu je společnost{" "}
-            <span className="font-bold">Kaufland Česká republika v.o.s.</span>,
-            kteá se v říjnu 2020 stala oficiálním partnerem českého hokeje, a to
-            je v celé jeho šíři. Kaufland je na své parnterství opravdu hrdý,
-            neboť podporuje oblíbený sport napříč celou naší společností ve
-            všech oblastech - nejen národní tým či hokejovou extraligu, ale také
-            para hokej, ženský hokej či právě mládežnické projekty. Nový projekt
-            Škola hokejových talentů je pro společnost další možností, jak
-            rozšířit svou spolupráci s hokejem v České republice a podpořit tak
-            mladé hráče.
-          </p>
+      <div id="sponsor" className="px-3 py-10 bg-red-main w-full">
+        <div className="w-full md:w-5/6 md:mx-auto">
+          <div className="w-full md:w-1/2 md:mx-auto flex items-center justify-center mb-8">
+            <img className="w-2/3" src={logoKauf} alt="" />
+          </div>
+          <div>
+            <h3 className="text-white text-3xl font-bold mb-2">
+              GENERÁLNÍ PARTNEŘI
+            </h3>
+            <p className="text-white font-base">
+              Generálním partnerem projektu je společnost{" "}
+              <span className="font-bold">Kaufland Česká republika v.o.s.</span>
+              , kteá se v říjnu 2020 stala oficiálním partnerem českého hokeje,
+              a to je v celé jeho šíři. Kaufland je na své parnterství opravdu
+              hrdý, neboť podporuje oblíbený sport napříč celou naší společností
+              ve všech oblastech - nejen národní tým či hokejovou extraligu, ale
+              také para hokej, ženský hokej či právě mládežnické projekty. Nový
+              projekt Škola hokejových talentů je pro společnost další možností,
+              jak rozšířit svou spolupráci s hokejem v České republice a
+              podpořit tak mladé hráče.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
