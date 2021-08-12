@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-full font-body">
+    <div className="w-full font-body relative overflow-x-hidden">
       <Header />
 
       {/* FIRST SECTION */}
@@ -25,7 +25,7 @@ function App() {
       </div>
 
       {/* SECOND SECTION */}
-      <div className="px-3 py-10 w-full flex flex-col items-center">
+      <div id="about" className="px-3 py-10 w-full flex flex-col items-center">
         <div className="relative mb-8">
           <img className="mt-5" src={mainImg} alt="" loading="lazy" />
         </div>
@@ -59,7 +59,10 @@ function App() {
       </div>
 
       {/* THIRD SECTION */}
-      <div className="w-full px-3 py-10 bg-gray-100 flex flex-col space-y-5">
+      <div
+        id="content"
+        className="w-full px-3 py-10 bg-gray-100 flex flex-col space-y-5"
+      >
         <div className="bg-white shadow">
           <div>
             <img src={activityImage} alt="" />
@@ -112,7 +115,7 @@ function App() {
       <SliderSection />
 
       {/* FIFTH SECTION */}
-      <div className="px-3 py-10 bg-red-main">
+      <div id="sponsor" className="px-3 py-10 bg-red-main">
         <div className="w-full flex items-center justify-center mb-8">
           <img className="w-2/3" src={logoKauf} alt="" />
         </div>

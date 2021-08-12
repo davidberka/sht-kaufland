@@ -44,7 +44,7 @@ const Arrow = (props) => {
 
 const SliderSection = () => {
   return (
-    <div className="px-3 py-10 bg-blueBg">
+    <div id="coaches" className="px-3 py-10 bg-blueBg">
       <h3 className="text-center text-3xl text-red-main font-bold mb-8">
         TRENÉŘI A LEKTOŘI
       </h3>

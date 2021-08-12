@@ -5,7 +5,7 @@ import ig from "../assets/FB@1x.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white px-3 py-4">
+    <footer id="contact" className="bg-white px-3 py-4">
       <div className="flex items-center mb-3">
         <img className="mr-5" src={logo} alt="" />
         <p className="font-bold text-base text-blue-main">
