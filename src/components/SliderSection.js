@@ -47,9 +47,16 @@ const SliderSection = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -73,19 +80,29 @@ const SliderSection = () => {
       },
     ],
   };
+
   return (
-    <div id="coaches" className="px-3 py-10 bg-blueBg w-full">
-      <div className="w-full md:w-full md:mx-auto">
-        <h3 className="text-center text-3xl text-red-main font-bold mb-8">
+    <div
+      id="coaches"
+      className="px-3 py-10 2xl:py-20 bg-blueBg bg-cover w-full"
+    >
+      <div className="w-full md:w-5/6 2xl:w-3/4 3xl:w-7/12 md:mx-auto">
+        <h3 className="text-center text-3xl 2xl:text-h3 text-red-main font-bold mb-8 2xl:mb-12">
           TRENÉŘI A LEKTOŘI
         </h3>
-        <div className="w-5/6 mx-auto mb-10">
+        <div className="w-full mx-auto mb-10">
           <Slider
             className="w-full"
             nextArrow={<Arrow type="next" />}
             prevArrow={<Arrow type="prev" />}
             {...settings}
           >
+            <PersonCard
+              imgSrc={personImg}
+              name="ANETA SADÍLKOVÁ"
+              job="VÝŽIVOVÝ MANAŽER"
+              desc="This is your Team Member description. Use this space to write a brief description of this person's role and responsibilities, or add a short bio with a background summary."
+            />
             <PersonCard
               imgSrc={personImg}
               name="ANETA SADÍLKOVÁ"

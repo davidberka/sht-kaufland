@@ -11,8 +11,8 @@ function App() {
       <Header />
 
       {/* FIRST SECTION */}
-      <div className="bg-redBg h-88 md:h-96 w-full">
-        <div className="h-full md:w-5/6 md:mx-auto px-3">
+      <div className="bg-redBg bg-cover h-88 md:h-96 lg:h-100 2xl:h-110 3xl:h-main w-full">
+        <div className="h-full md:w-5/6 2xl:w-3/4 3xl:w-7/12 3xl:px-0 md:mx-auto px-3">
           {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
           <iframe
             width="100%"
@@ -27,16 +27,21 @@ function App() {
       {/* SECOND SECTION */}
       <div
         id="about"
-        className="px-3 md:w-5/6 md:mx-auto py-10 w-full flex flex-col items-center"
+        className="px-3 3xl:px-0 md:w-5/6 2xl:w-3/4 3xl:w-7/12 md:mx-auto py-10 2xl:py-20 w-full flex flex-col lg:flex-row items-center lg:justify-between"
       >
-        <div className="relative mb-8 w-72">
-          <img className="mt-5" src={mainImg} alt="" loading="lazy" />
+        <div className="relative mb-8 w-72 lg:w-1/2 3xl:w-5/12 3xl:pr-20">
+          <img
+            className="mt-5 lg:w-5/6 3xl:w-full"
+            src={mainImg}
+            alt=""
+            loading="lazy"
+          />
         </div>
-        <div>
-          <h3 className="text-red-main text-3xl font-bold mb-2">
+        <div className="lg:w-1/2 3xl:w-7/12">
+          <h3 className="text-red-main text-3xl 2xl:text-h3 font-bold mb-2 2xl:mb-4">
             ŠKOLA HOKEJOVÝCH TALENTŮ
           </h3>
-          <p className="font-normal text-base">
+          <p className="font-normal text-base 2xl:text-lg">
             Představujeme vám nový projekt{" "}
             <span className="font-bold">hokejových tréninků a workshopů</span>{" "}
             pro mladé hokejisty ve věku 5.-8. třídy základních škol, vedené
@@ -62,53 +67,69 @@ function App() {
       </div>
 
       {/* THIRD SECTION */}
-      <div id="content" className="w-full px-3 py-10 bg-gray-100">
-        <div className=" flex flex-col space-y-5 w-full md:w-5/6 md:mx-auto">
+      <div id="content" className="w-full px-3 py-10 2xl:py-20 bg-gray-100">
+        <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 w-full md:w-5/6 2xl:w-3/4 3xl:w-7/12 md:mx-auto">
           <div className="bg-white shadow md:w-3/4">
             <div>
               <img src={activityImage} alt="" />
-              <h3 className="text-3xl text-blue-main bg-white md:relative md:-mt-20 md:w-1/2 md:ml-5 font-bold w-max py-2 px-4">
+              <h3 className="text-3xl 2xl:text-h3 text-blue-main bg-white md:relative md:-mt-20 md:w-1/2 md:ml-5 font-bold w-max py-2 2xl:pt-3 2xl:pb-0 px-4 2xl:pl-6">
                 HOKEJ0VÉ DOVEDNOSTI
               </h3>
             </div>
-            <div className="p-4 pt-2 md:px-10 md:py-6">
-              <div className="border-b flex pb-1">
-                <h6 className="mr-4 font-bold text-base">BRUSLENÍ</h6>
-                <p>agility, rychlost, techinka bruslení</p>
+            <div className="p-4 pt-2 md:px-10 md:py-6 2xl:pb-14 2xl:pt-12 2xl:px-12">
+              <div className="border-b flex pb-1 2xl:pb-3">
+                <h6 className="mr-4 font-bold text-base 2xl:text-xl">
+                  BRUSLENÍ
+                </h6>
+                <p className="2xl:text-xl">
+                  agility, rychlost, techinka bruslení
+                </p>
               </div>
-              <div className="py-2 border-b flex">
-                <h6 className="font-bold text-base mr-4">TECHNIKA</h6>
-                <p>dovednosti v herních situacích, zakončení</p>
+              <div className="py-2 2xl:py-3 border-b flex">
+                <h6 className="font-bold text-base 2xl:text-xl mr-4">
+                  TECHNIKA
+                </h6>
+                <p className="2xl:text-xl">
+                  dovednosti v herních situacích, zakončení
+                </p>
               </div>
-              <div className="pt-2">
-                <h6 className="font-bold text-base">HOKEJOVÉ MYŠLENÍ</h6>
+              <div className="pt-2 2xl:pt-3">
+                <h6 className="font-bold text-base 2xl:text-xl">
+                  HOKEJOVÉ MYŠLENÍ
+                </h6>
               </div>
             </div>
           </div>
           <div className="bg-white shadow md:w-3/4">
             <div>
               <img src={activityImage} alt="" />
-              <h3 className="text-3xl text-blue-main bg-white md:relative md:-mt-20 md:w-1/2 md:ml-5 font-bold w-max py-2 px-4">
+              <h3 className="text-3xl 2xl:text-h3 text-blue-main bg-white md:relative md:-mt-20 md:w-5/12 2xl:w-1/2 md:ml-5 font-bold w-max py-2 2xl:pt-3 2xl:pb-0 px-4 2xl:pl-6">
                 ROZVOJ OSOBNOSTI
               </h3>
             </div>
-            <div className="p-4 pt-2 md:px-10 md:py-6">
-              <div className="border-b flex pb-1">
-                <h6 className="font-bold text-base mr-4">PSYCHOHYGIENA</h6>
-                <h6 className="font-bold text-base ">
+            <div className="p-4 pt-2 md:px-10 md:py-6 2xl:pb-14 2xl:pt-12 2xl:px-12">
+              <div className="border-b flex 2xl:space-x-5 pb-1 2xl:pb-3">
+                <h6 className="font-bold text-base 2xl:text-xl mr-4">
+                  PSYCHOHYGIENA
+                </h6>
+                <h6 className="font-bold text-base 2xl:text-xl">
                   PREVENCE ÚZKOSTI A DEPRESE
                 </h6>
               </div>
-              <div className="py-2 border-b flex">
-                <h6 className="font-bold text-base mr-4">
+              <div className="py-2 2xl:py-3 border-b flex">
+                <h6 className="font-bold text-base 2xl:text-xl mr-4 2xl:mr-10">
                   COACHING A MENTORING
                 </h6>
-                <h6 className="font-bold text-base mr-4">NUTRICE</h6>
-                <h6 className="font-bold text-base">FYZIO</h6>
+                <h6 className="font-bold text-base 2xl:text-xl mr-4 2xl:mr-10">
+                  NUTRICE
+                </h6>
+                <h6 className="font-bold text-base 2xl:text-xl">FYZIO</h6>
               </div>
-              <div className="pt-2 flex">
-                <h6 className="font-bold text-base mr-4">PRÁCE S CHYBOU</h6>
-                <h6 className="font-bold text-base">LEADERSHIP</h6>
+              <div className="flex 2xl:space-x-8 pt-2 2xl:pt-3">
+                <h6 className="font-bold text-base 2xl:text-xl mr-4">
+                  PRÁCE S CHYBOU
+                </h6>
+                <h6 className="font-bold text-base 2xl:text-xl">LEADERSHIP</h6>
               </div>
             </div>
           </div>
@@ -119,16 +140,20 @@ function App() {
       <SliderSection />
 
       {/* FIFTH SECTION */}
-      <div id="sponsor" className="px-3 py-10 bg-red-main w-full">
-        <div className="w-full md:w-5/6 md:mx-auto">
-          <div className="w-full md:w-1/2 md:mx-auto flex items-center justify-center mb-8">
-            <img className="w-2/3" src={logoKauf} alt="" />
+      <div id="sponsor" className="px-3 py-10 2xl:py-20 bg-red-main w-full">
+        <div className="w-full md:w-5/6 2xl:w-3/4 3xl:w-6/12 md:mx-auto lg:flex lg:items-center lg:justity-between">
+          <div className="w-full md:w-1/2 3xl:w-4/12 3xl:pr-20 md:mx-auto flex items-center justify-center mb-8 2xl:mb-0">
+            <img
+              className="w-7/12 2xl:w-5/12 3xl:w-full"
+              src={logoKauf}
+              alt=""
+            />
           </div>
-          <div>
-            <h3 className="text-white text-3xl font-bold mb-2">
+          <div className="lg:w-1/2 3xl:w-8/12">
+            <h3 className="text-white text-3xl 2xl:text-h3 font-bold mb-2 2xl:mb-4">
               GENERÁLNÍ PARTNEŘI
             </h3>
-            <p className="text-white font-base">
+            <p className="text-white text-base 2xl:text-lg">
               Generálním partnerem projektu je společnost{" "}
               <span className="font-bold">Kaufland Česká republika v.o.s.</span>
               , kteá se v říjnu 2020 stala oficiálním partnerem českého hokeje,

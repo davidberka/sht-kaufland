@@ -18,6 +18,19 @@ html {
   background-color: #e3000f;
 }
 
+@media only screen and (min-width: 1536px) {
+  .slick-dots {
+    bottom: -50px !important;
+  }
+  .slick-dots li button::before {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .slick-dots li {
+    margin: 0 8px !important;
+  }
+}
+
 .arrow {
   position: absolute;
   color: #e3000f;
@@ -55,6 +68,31 @@ html {
 
   .nextArrow {
     right: -50px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .prevArrow {
+    left: -60px;
+  }
+
+  .nextArrow {
+    right: -60px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .prevArrow {
+    left: -70px;
+  }
+
+  .nextArrow {
+    right: -70px;
   }
 }
 
