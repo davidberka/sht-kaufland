@@ -142,7 +142,7 @@ function App() {
       {/* FIFTH SECTION */}
       <div id="sponsor" className="px-3 py-10 2xl:py-20 bg-red-main w-full">
         <div className="w-full md:w-5/6 2xl:w-3/4 3xl:w-6/12 md:mx-auto lg:flex lg:items-center lg:justity-between">
-          <div className="w-full md:w-1/2 3xl:w-4/12 3xl:pr-20 md:mx-auto flex items-center justify-center mb-8 2xl:mb-0">
+          <div className="w-full md:w-1/2 3xl:w-4/12 3xl:pr-20 md:mx-auto flex items-center justify-center mb-8 md:mb-0">
             <img
               className="w-7/12 2xl:w-5/12 3xl:w-full"
               src={logoKauf}
