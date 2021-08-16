@@ -2,7 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PersonCard from "./PersonCard";
-import personImg from "../assets/person.jpg";
+import mainCoach from "../assets/hl_trener.png";
+import mentalCoach from "../assets/mentalni_trener.jpg";
+import fyzioCoach from "../assets/fyzioterapeut.png";
+import conditionCoach from "../assets/kondicni_trener.png";
 
 const Arrow = (props) => {
   let className = props.type === "next" ? "nextArrow" : "prevArrow";
@@ -53,14 +56,14 @@ const SliderSection = () => {
       {
         breakpoint: 1536,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -86,7 +89,8 @@ const SliderSection = () => {
       id="coaches"
       className="px-3 py-10 2xl:py-20 bg-blueBg bg-cover w-full"
     >
-      <div className="w-full md:w-5/6 2xl:w-3/4 3xl:w-7/12 md:mx-auto">
+      {/* w-full instead w-4/6 mx-auto  */}
+      <div className="w-4/6 mx-auto md:w-5/6 2xl:w-3/4 3xl:w-7/12 md:mx-auto">
         <h3 className="text-center text-3xl 2xl:text-h3 text-red-main font-bold mb-8 2xl:mb-12">
           TRENÉŘI A LEKTOŘI
         </h3>
@@ -98,33 +102,27 @@ const SliderSection = () => {
             {...settings}
           >
             <PersonCard
-              imgSrc={personImg}
-              name="ANETA SADÍLKOVÁ"
-              job="VÝŽIVOVÝ MANAŽER"
+              imgSrc={mainCoach}
+              name="VIKTOR LUKÁŠ"
+              job="HLAVNÍ TRENÉR"
               desc="This is your Team Member description. Use this space to write a brief description of this person's role and responsibilities, or add a short bio with a background summary."
             />
             <PersonCard
-              imgSrc={personImg}
-              name="ANETA SADÍLKOVÁ"
-              job="VÝŽIVOVÝ MANAŽER"
+              imgSrc={mentalCoach}
+              name="LENKA CHUDOBOVÁ"
+              job="MENTÁLNÍ KOUČ"
               desc="This is your Team Member description. Use this space to write a brief description of this person's role and responsibilities, or add a short bio with a background summary."
             />
             <PersonCard
-              imgSrc={personImg}
-              name="ANETA SADÍLKOVÁ"
-              job="VÝŽIVOVÝ MANAŽER"
+              imgSrc={fyzioCoach}
+              name="PETR SOUKUP"
+              job="FYZIOTERAPEUT"
               desc="This is your Team Member description. Use this space to write a brief description of this person's role and responsibilities, or add a short bio with a background summary."
             />
             <PersonCard
-              imgSrc={personImg}
-              name="ANETA SADÍLKOVÁ"
-              job="VÝŽIVOVÝ MANAŽER"
-              desc="This is your Team Member description. Use this space to write a brief description of this person's role and responsibilities, or add a short bio with a background summary."
-            />
-            <PersonCard
-              imgSrc={personImg}
-              name="ANETA SADÍLKOVÁ"
-              job="VÝŽIVOVÝ MANAŽER"
+              imgSrc={conditionCoach}
+              name="JAROSLAV BLAŽEK"
+              job="KONDIČNÍ TRENÉR"
               desc="This is your Team Member description. Use this space to write a brief description of this person's role and responsibilities, or add a short bio with a background summary."
             />
           </Slider>
