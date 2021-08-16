@@ -1,7 +1,7 @@
 import logo from "../assets/logo_sht.svg";
-import tt from "../assets/TT@1x.svg";
-import fb from "../assets/IG@1x.svg";
-import ig from "../assets/FB@1x.svg";
+// import tt from "../assets/TT@1x.svg";
+// import fb from "../assets/IG@1x.svg";
+// import ig from "../assets/FB@1x.svg";
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
           <p className="mb-3 md:mb-0 md:mr-5 lg:w-8/12 text-sm text-blue-main">
             +420 777 825 223 / info@skolatalentu.cz
           </p>
-          <div className="flex space-x-3">
+          {/* <div className="flex space-x-3">
             <a href="#" target="_blank">
               <img src={fb} alt="" />
             </a>
@@ -27,7 +27,7 @@ const Footer = () => {
             <a href="#" target="_blank">
               <img src={tt} alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

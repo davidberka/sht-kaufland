@@ -1,8 +1,8 @@
 import logo from "../assets/logo_dhsk.png";
 import bgLogo from "../assets/KL_Logo_SHT_Final@1x.svg";
-import tt from "../assets/TT@1x.svg";
-import fb from "../assets/IG@1x.svg";
-import ig from "../assets/FB@1x.svg";
+// import tt from "../assets/TT@1x.svg";
+// import fb from "../assets/IG@1x.svg";
+// import ig from "../assets/FB@1x.svg";
 import { useState } from "react";
 
 const Header = () => {
@@ -72,7 +72,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <div className="flex space-x-3 lg:ml-10">
+            {/* <div className="flex space-x-3 lg:ml-10">
               <a href="#" target="_blank">
                 <img src={fb} alt="" />
               </a>
@@ -82,7 +82,7 @@ const Header = () => {
               <a href="#" target="_blank">
                 <img src={tt} alt="" />
               </a>
-            </div>
+            </div> */}
           </div>
           <div
             className="p-3 cursor-pointer z-20 lg:hidden"
