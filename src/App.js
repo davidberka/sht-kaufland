@@ -151,7 +151,7 @@ function App() {
           </div>
           <div className="lg:w-1/2 3xl:w-8/12">
             <h3 className="text-white text-3xl 2xl:text-h3 font-bold mb-2 2xl:mb-4">
-              GENERÁLNÍ PARTNEŘI
+              GENERÁLNÍ PARTNER
             </h3>
             <p className="text-white text-base 2xl:text-lg">
               Generálním partnerem projektu je společnost{" "}
