@@ -82,7 +82,7 @@ function App() {
                   BRUSLENÍ
                 </h6>
                 <p className="2xl:text-xl">
-                  agility, rychlost, techinka bruslení
+                  agility, rychlost, technika bruslení
                 </p>
               </div>
               <div className="py-2 2xl:py-3 border-b flex">
