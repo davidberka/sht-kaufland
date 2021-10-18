@@ -17,7 +17,7 @@ function App() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/dzbMitB0BGY?rel=0&controls=1&autoplay=0&mute=0&start=0"
+            src="https://www.youtube.com/embed/LFGi_itb3fU?rel=0&controls=1&autoplay=0&mute=0&start=0"
             frameBorder="0"
             allow="autoplay; encrypted-media"
           ></iframe>
@@ -47,10 +47,11 @@ function App() {
             pro mladé hokejisty ve věku 5.-8. třídy základních škol, vedené
             sportovními trenéry a odborníky. Tým je doplněn o{" "}
             <span className="font-bold">trenéry partnerských klubů</span>.
-            Hlavním trenérem není pouze <span className="font-bold">hokej</span>
-            , ale i <span className="font-bold">rozvoj osobnosti</span> mladých
-            hřáčů na základě přednášek a workshopů. Akce se uskuteční na zimních
-            stadionech pertnerských klubů.
+            Hlavním zaměřením není pouze{" "}
+            <span className="font-bold">hokej</span>, ale i{" "}
+            <span className="font-bold">rozvoj osobnosti</span> mladých hřáčů na
+            základě přednášek a workshopů. Akce se uskuteční na zimních
+            stadionech partnerských klubů.
             <br />
             <br />
             Cílem není primárně vychovávat{" "}
@@ -156,7 +157,7 @@ function App() {
             <p className="text-white text-base 2xl:text-lg">
               Generálním partnerem projektu je společnost{" "}
               <span className="font-bold">Kaufland Česká republika v.o.s.</span>
-              , kteá se v říjnu 2020 stala oficiálním partnerem českého hokeje,
+              , která se v říjnu 2020 stala oficiálním partnerem českého hokeje,
               a to je v celé jeho šíři. Kaufland je na své parnterství opravdu
               hrdý, neboť podporuje oblíbený sport napříč celou naší společností
               ve všech oblastech - nejen národní tým či hokejovou extraligu, ale
